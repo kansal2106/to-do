@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.headerClass {
+    text-align: center;
+    margin-top: 20px;
+    font-size:x-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.outerRow {
+    background-color: #677094;
+    color: white;
+    border-radius: 5px;
+    padding: 30px 15px;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.innerRow {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.dateTime {
+    float: right;
+    width: 70%;
+}
+
+.btn {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.ant-btn {
+    border: 2px solid #252834;
+}
+
+button.ant-btn.ant-btn-primary {
+    background-color: #252834;
+    outline: none;
+}
+
+button.ant-btn.ant-btn-primary:hover {
+    background-color: #252834;
+    border: 2px solid #252834;
+}
+
+div.ant-select.ant-select-single.ant-select-show-arrow.ant-select-show-search {
+    width: 100%;
+}

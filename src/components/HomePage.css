@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+}
+
+.outerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+  position: relative;
+}
+
+.homeHeader{
+  width: 29vw;
+  max-width: 400px;
+  /* transition: transformX(-50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10vh 10vw; */
+  position: absolute;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.taskHeader {
+  top: 3vh;
+  left: 10vw;
+}
+
+.memberHeader {
+  top: 3vh;
+  right: 10vw;
+}
+
+.outerHomeRow {
+  /* background-color: #677094; */
+  color: white;
+  border-radius: 5px;
+  padding: 0px 15px;
+  width: 29vw;
+  max-width: 400px;
+  height: 70vh;
+  margin: 20vh 10vw 5vh;
+  overflow-y: scroll;
+}
+
+.outerHomeRow::-webkit-scrollbar {
+  display: none;
+}
+
+.taskBox {
+  background-color: #142453;
+  width: 100%;
+  height: 100px;
+  margin: 5px 0;
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+}
+
+.task {
+  background-color: #be2bbb;
+}
+
+.member {
+  background-color: #1878d0;
+}
+
+.taskName,.memberName {
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.taskCategory, .memberDesignation {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.taskMember, .memberLocation {
+  position: absolute;
+  left: 10px;
+  top: 70px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.date-time {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 10px;
+  top: 70px;
+}
+
+.date,.time {
+  margin: 0 5px;
+}
+
+.edit-delete {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
